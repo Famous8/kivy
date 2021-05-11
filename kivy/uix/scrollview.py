@@ -1152,8 +1152,9 @@ class ScrollView(StencilView):
         self._bar_color = value
 
     def add_widget(self, widget, *args, **kwargs):
-        if self._viewport:
-            raise Exception('ScrollView accept only one widget')
+        #if self._viewport:
+            #raise Exception('ScrollView accept only one widget')
+            
         canvas = self.canvas
         self.canvas = self.canvas_viewport
         super(ScrollView, self).add_widget(widget, *args, **kwargs)
